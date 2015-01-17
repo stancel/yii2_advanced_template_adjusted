@@ -14,9 +14,30 @@ return [
     'modules' => [],
 //    'homeUrl' => '/admin',
     'components' => [
+//        'user' => [
+//            'identityClass' => 'common\models\User',
+//            'enableAutoLogin' => true,
+//        ],
+        'request' => [
+            'csrfParam' => '_backendCSRF',
+            'csrfCookie' => [
+                'httpOnly' => true,
+                'path' => '/admin',
+            ],
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
-            'enableAutoLogin' => true,
+            'identityCookie' => [
+                'name' => '_backendIdentity',
+                'path' => '/admin',
+                'httpOnly' => true,
+            ],
+        ],
+        'session' => [
+            'name' => 'BACKENDSESSID',
+            'cookieParams' => [
+                'path' => '/admin',
+            ],
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
@@ -30,6 +51,12 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        'urlManager' => [
+//            'baseUrl' => '/admin',
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'rules' => []
+        ]
     ],
     'params' => $params,
 ];

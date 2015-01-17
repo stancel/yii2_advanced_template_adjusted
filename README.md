@@ -1,3 +1,28 @@
+Adjusted Yii2 Application Template
+===================================
+This is the Yii2 Advanced Template adjusted to be more convenient and usable.
+
+You can now:
+
+  - Run your app without any Apache2 configuration. 
+You will still need mod_rewrite enabled but do not need to configure virtual 
+hosts or setup multiple Document Roots.
+
+  - You can run your app in a subdirectory of your Apache Document Root
+
+  - Backend can be reached by going to /admin. However you will need to create 
+a symbolic link by doing the following:
+    cd /path/to/app
+    ln -s backend/web admin
+
+  - Pretty URLs have been enabled on front end and back end
+
+  - Separate sessions and cookies for front end and back end, to avoid collisions
+
+
+
+
+
 Yii 2 Advanced Application Template
 ===================================
 

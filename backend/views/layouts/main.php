@@ -5,6 +5,10 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 
+//Brad
+//use \yii\web\Request;
+
+
 /* @var $this \yii\web\View */
 /* @var $content string */
 
@@ -24,6 +28,9 @@ AppAsset::register($this);
     <?php $this->beginBody() ?>
     <div class="wrap">
         <?php
+            //Brad
+//            $baseUrl = str_replace('/backend/web', '', (new Request)->getBaseUrl());
+        
             NavBar::begin([
                 'brandLabel' => 'My Company',
                 'brandUrl' => Yii::$app->homeUrl,
