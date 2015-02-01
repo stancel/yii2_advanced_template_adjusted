@@ -1,6 +1,6 @@
 {
     "name": "stancel/yii2_advanced_template_adjusted",
-    "description": "Yii 2 Advanced Application Template",
+    "description": "This is a Yii2 Advanced Application Template that has been adjusted for the Frontend and Backend to both run on a single domain without having to make Apache or Nginx configuration changes. It is ideal for building a deploying a Yii2 app on a shared hosting environment or a VPS such as DigitalOcean or Linode.",
     "keywords": ["shared hosting","single domain","yii2", "framework", "advanced", "application template"],
     "homepage": "https://github.com/stancel/yii2_advanced_template_adjusted",
     "type": "project",
