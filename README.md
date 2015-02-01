@@ -31,9 +31,10 @@ Make sure you have this globally installed:
 
 ```
 php composer.phar global require "fxp/composer-asset-plugin:1.0.0-beta4"
-
 ```
-Now you can create a new project and put it into a sub-folder called advanced
+
+Now you can navigate to your web server's Document Root and create a new project and put it into a sub-folder called advanced:
+
 ```
 php composer.phar create-project --prefer-dist --stability=dev stancel/yii2_advanced_template_adjusted advanced
 ```
@@ -42,12 +43,12 @@ Next, you need to initialize this Yii2 instance by running:
 
 ```
 cd /to/your/application/path/advanced/
-php yii
+php init
 ```
 
 and follow the prompts to choose if you are going to setup a Development or Production instance.
 
-Create a symbolic link from the root application directory to the backend web folder:
+Create a symbolic link from the root application directory to the backend web folder so you can later the backend as http://localhost/advanced/admin:
 
 ```
 cd /to/your/application/path/advanced/
@@ -75,7 +76,7 @@ php yii migrate
 Now you can use the Gii tool to generate your a CRUD scaffolding (Models, View and Controllers) by navigating to:
 
 ```
-http://localhost/yii2_advanced_template_adjusted/gii
+http://localhost/advanced/gii
 ```
 
 
