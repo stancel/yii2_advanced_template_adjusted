@@ -1,16 +1,16 @@
 {
-    "name": "yiisoft/yii2-app-advanced",
+    "name": "stancel/yii2_advanced_template_adjusted",
     "description": "Yii 2 Advanced Application Template",
-    "keywords": ["yii2", "framework", "advanced", "application template"],
-    "homepage": "http://www.yiiframework.com/",
+    "keywords": ["shared hosting","single domain","yii2", "framework", "advanced", "application template"],
+    "homepage": "https://github.com/stancel/yii2_advanced_template_adjusted",
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "issues": "https://github.com/stancel/yii2_advanced_template_adjusted/issues?state=open",
         "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
+        "wiki": "https://github.com/stancel/yii2_advanced_template_adjusted/wiki",
         "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2"
+        "source": "https://github.com/stancel/yii2_advanced_template_adjusted"
     },
     "minimum-stability": "stable",
     "require": {
