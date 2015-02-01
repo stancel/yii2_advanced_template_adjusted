@@ -27,37 +27,21 @@ Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-Either run
-
-```
-php composer.phar require stancel/yii2_advanced_template_adjusted "2.0.*"
-```
-
-for dev-master
-
-```
-php composer.phar require stancel/yii2_advanced_template_adjusted "dev-master"
-```
-
-or add
-
-```
-"stancel/yii2_advanced_template_adjusted": "2.0.*"
-```
-
-to the require section of your `composer.json` file.
-
-
-Then make sure you have this globally installed:
+Make sure you have this globally installed:
 
 ```
 php composer.phar global require "fxp/composer-asset-plugin:1.0.0-beta4"
+
+```
+Now you can create a new project and put it into a sub-folder called advanced
+```
+php composer.phar create-project --prefer-dist --stability=dev stancel/yii2_advanced_template_adjusted advanced
 ```
 
 Next, you need to initialize this Yii2 instance by running:
 
 ```
-cd /to/your/application/path/yii2_advanced_template_adjusted/
+cd /to/your/application/path/advanced/
 php yii
 ```
 
@@ -86,7 +70,6 @@ Now you can use the Gii tool to generate your a CRUD scaffolding (Models, View a
 ```
 http://localhost/yii2_advanced_template_adjusted/gii
 ```
-
 
 
 
