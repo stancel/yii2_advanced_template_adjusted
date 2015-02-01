@@ -47,6 +47,13 @@ php yii
 
 and follow the prompts to choose if you are going to setup a Development or Production instance.
 
+Create a symbolic link from the root application directory to the backend web folder:
+
+```
+cd /to/your/application/path/advanced/
+ln -s backend/web admin
+```
+
 Next you will go into the common/config/main-local.php file and enter your database details here:
 
 ```
