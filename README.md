@@ -20,6 +20,73 @@ a symbolic link by doing the following:
   - Separate sessions and cookies for front end and back end, to avoid collisions
 
 
+Installation
+------------
+
+### Install With Composer
+
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+Either run
+
+```
+php composer.phar require stancel/yii2_advanced_template_adjusted "2.0.*"
+```
+
+for dev-master
+
+```
+php composer.phar require stancel/yii2_advanced_template_adjusted "dev-master"
+```
+
+or add
+
+```
+"stancel/yii2_advanced_template_adjusted": "2.0.*"
+```
+
+to the require section of your `composer.json` file.
+
+
+Then make sure you have this globally installed:
+
+```
+php composer.phar global require "fxp/composer-asset-plugin:1.0.0-beta4"
+```
+
+Next, you need to initialize this Yii2 instance by running:
+
+```
+cd /to/your/application/path/yii2_advanced_template_adjusted/
+php yii
+```
+
+and follow the prompts to choose if you are going to setup a Development or Production instance.
+
+Next you will go into the common/config/main-local.php file and enter your database details here:
+
+```
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=localhost;dbname=YOUR_DB_NAME_HERE',
+            'username' => 'YOUR_DB_USERNAME_HERE',
+            'password' => 'YOUR_DB_PASSWORD_HERE',
+            'charset' => 'utf8',
+        ],
+```
+Once that is completed and saved, your final step is run the yii migration tool:
+
+```
+cd /to/your/application/path/yii2_advanced_template_adjusted/
+php yii migrate
+```
+
+Now you can use the Gii tool to generate your a CRUD scaffolding (Models, View and Controllers) by navigating to:
+
+```
+http://localhost/yii2_advanced_template_adjusted/gii
+```
+
 
 
 
